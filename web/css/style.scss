@@ -1,0 +1,299 @@
+/* mixin */
+$bi: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+$content-bg: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+$text-color: #ffd000;
+$text-shadow: 1px 1px 1px #000;
+$link-color: #ffd000;
+$link-hover-color: #ffd000;
+$link-hover-shadow: 0 0 2px #fff;
+$bs: 0 0 2px #000;
+
+/* Общие настройки */
+.clear{
+  clear: both;
+}
+html, body{
+  text-shadow: $text-shadow;
+  .btn{
+    box-shadow: $bs;
+    font-weight: bold;
+  }
+  a{
+    color: $link-color;
+    outline: none;
+    text-decoration: none;
+    &:hover{
+      color: $link-hover-color;
+      outline: none;
+      text-decoration: none;
+      text-shadow: $link-hover-shadow;
+      cursor: pointer;
+    }
+    &:active{
+      color: $link-hover-color;
+      outline: none;
+      text-decoration: none;
+      text-shadow: $link-hover-shadow;
+    }
+    &:focus{
+      color: $link-hover-color;
+      outline: none;
+      text-decoration: none;
+      text-shadow: $link-hover-shadow;
+    }
+  }
+}
+
+header {
+  background-image: $bi;
+  .header-navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    .navbar-nav{
+      margin: 0;
+      text-align: center;
+      .open > a{
+        background-image: $bi;
+      }
+      li{
+        a{
+          color: $link-color;
+          text-shadow: 1px 1px 2px #000;
+          font-size: 18px;
+          outline: none;
+          &:hover{
+            background-image: $bi;
+            text-shadow: $link-hover-shadow;
+          }
+          &:focus{
+            background-image: $bi;
+            text-shadow: 0 0 3px #fff;
+          }
+        }
+      }
+      .dropdown-menu{
+        border: none;
+        background-image: $bi;
+        padding: 0;
+      }
+    }
+    #users-box{
+      margin-right: 0;
+      margin-left: 0;
+      text-align: center;
+      a{
+        color: $link-color;
+        outline: none;
+        &:hover{
+          text-shadow: $link-hover-shadow;
+        }
+      }
+      #wellcome-text{
+        color: $text-color;
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+}
+#sidebar {
+  background-image: $bi;
+  overflow: hidden;
+  color: $text-color;
+  .side-box{
+    text-align: center;
+    margin-bottom: 10px;
+    .side-title{
+      padding: 10px 0;
+      margin: 0;
+      background-image: $bi;
+      a{
+        color: $link-color;
+        outline: none;
+        &:hover{
+          text-shadow: $link-hover-shadow;
+        }
+      }
+    }
+  }
+}
+#content {
+  overflow: hidden;
+}
+#page .section-list {
+  padding-left: 0;
+  list-style: none;
+  li {
+    padding: 25px 0 25px 0;
+    clear: both;
+  }
+}
+.box{
+  img {
+    margin: 0 20px 0 0;
+    border: solid 1px #e3e3e3;
+  }
+  table {
+    border-collapse:collapse;
+  }
+  table, th, td {
+    border: 1px solid #787878;
+    padding: 5px;
+  }
+}
+footer {
+  color: $text-color;
+  background-image: $bi;
+  padding: 5px;
+  #copyright{
+    text-align: center;
+    a{
+      outline: none;
+      color: $link-color;
+      &:hover{
+        text-shadow: $link-hover-shadow;
+      }
+    }
+  }
+}
+
+/* 404 */
+.page404-page{
+  background: url("../images/bg_main_content.jpg") no-repeat center center / cover;
+  color: $text-color;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* Главная */
+.main-content{
+  background: url("../images/bg_main_content.jpg") no-repeat center center / cover;
+  color: $text-color;
+  text-shadow: 1px 1px 1px #000;
+  h1{
+    text-align: center;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+
+/* Новости */
+.news-box{
+  .news-title{
+    background-image: $bi;
+    text-align: center;
+    color: $text-color;
+    text-shadow: -1px -1px 2px #000;
+    margin: 0;
+    padding: 10px;
+    a{
+      color: $link-color;
+      outline: none;
+      &:hover{
+        text-shadow: $link-hover-shadow;
+      }
+    }
+  }
+  .news-description{
+    padding: 15px;
+  }
+  .news-info{
+    padding: 10px;
+    color: $text-color;
+    text-shadow: -1px -1px 2px #000;
+    background-image: $bi;
+  }
+  a{
+    text-shadow: 1px 1px 1px #000;
+    outline: none;
+    color: $link-color;
+  }
+}
+.category-nav{
+  list-style: none;
+  margin: 0; padding: 0;
+  li{
+    a{
+      display: block;
+      padding: 5px;
+      outline: none;
+      background-image: $bi;
+    }
+  }
+}
+
+/* Услуги */
+.service-content{}
+
+/* Портфолио */
+.portfolio-content{
+  table, tr, td{
+    border: 1px double #000;
+    padding: 5px;
+  }
+  table{
+    tr{
+      &:first-of-type{
+        text-align: center;
+        font-weight: bold;
+        background-image: $bi;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+/* Контакты */
+#contact-box{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Регистрация и авторизация */
+.authorization-page{}
+.register-page{}
+.users-form-box{
+  .navbar-form{
+    background-image: $bi;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #000;
+    h4{
+      color: $text-color;
+      text-align: center;
+    }
+    label{
+      color: $text-color;
+      font-size: 10px;
+    }
+    input{
+      width: 100%;
+    }
+    button{
+      outline: none;
+      min-width: 50%;
+    }
+    a{
+      margin-top: 10px;
+      outline: none;
+      color: $link-color;
+      &:hover{
+        text-shadow: $link-hover-shadow;
+      }
+    }
+  }
+  #login_info{
+    color: $text-color;
+  }
+}
+
+/* Общие настройки для страниц */
+#content{
+  background-image: $content-bg;
+  color: $text-color;
+  padding: 0;
+}
+.session-message{
+  color: #fff;
+}

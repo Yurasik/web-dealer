@@ -1,0 +1,4 @@
+web_dealer:
+    resource: "@WebDealerBundle/Resources/config/routing.yml"
+    prefix:   /
+

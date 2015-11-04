@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* mixin */
+/* Общие настройки */
+.clear {
+  clear: both; }
+
+html, body {
+  text-shadow: 1px 1px 1px #000; }
+  html .btn, body .btn {
+    box-shadow: 0 0 2px #000;
+    font-weight: bold; }
+  html a, body a {
+    color: #ffd000;
+    outline: none;
+    text-decoration: none; }
+    html a:hover, body a:hover {
+      color: #ffd000;
+      outline: none;
+      text-decoration: none;
+      text-shadow: 0 0 2px #fff;
+      cursor: pointer; }
+    html a:active, body a:active {
+      color: #ffd000;
+      outline: none;
+      text-decoration: none;
+      text-shadow: 0 0 2px #fff; }
+    html a:focus, body a:focus {
+      color: #ffd000;
+      outline: none;
+      text-decoration: none;
+      text-shadow: 0 0 2px #fff; }
+
+header {
+  background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%); }
+  header .header-navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none; }
+    header .header-navbar .navbar-nav {
+      margin: 0;
+      text-align: center; }
+      header .header-navbar .navbar-nav .open > a {
+        background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%); }
+      header .header-navbar .navbar-nav li a {
+        color: #ffd000;
+        text-shadow: 1px 1px 2px #000;
+        font-size: 18px;
+        outline: none; }
+        header .header-navbar .navbar-nav li a:hover {
+          background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+          text-shadow: 0 0 2px #fff; }
+        header .header-navbar .navbar-nav li a:focus {
+          background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+          text-shadow: 0 0 3px #fff; }
+      header .header-navbar .navbar-nav .dropdown-menu {
+        border: none;
+        background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+        padding: 0; }
+    header .header-navbar #users-box {
+      margin-right: 0;
+      margin-left: 0;
+      text-align: center; }
+      header .header-navbar #users-box a {
+        color: #ffd000;
+        outline: none; }
+        header .header-navbar #users-box a:hover {
+          text-shadow: 0 0 2px #fff; }
+      header .header-navbar #users-box #wellcome-text {
+        color: #ffd000;
+        margin: 5px 0 0 0; }
+
+#sidebar {
+  background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+  overflow: hidden;
+  color: #ffd000; }
+  #sidebar .side-box {
+    text-align: center;
+    margin-bottom: 10px; }
+    #sidebar .side-box .side-title {
+      padding: 10px 0;
+      margin: 0;
+      background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%); }
+      #sidebar .side-box .side-title a {
+        color: #ffd000;
+        outline: none; }
+        #sidebar .side-box .side-title a:hover {
+          text-shadow: 0 0 2px #fff; }
+
+#content {
+  overflow: hidden; }
+
+#page .section-list {
+  padding-left: 0;
+  list-style: none; }
+  #page .section-list li {
+    padding: 25px 0 25px 0;
+    clear: both; }
+
+.box img {
+  margin: 0 20px 0 0;
+  border: solid 1px #e3e3e3; }
+.box table {
+  border-collapse: collapse; }
+.box table, .box th, .box td {
+  border: 1px solid #787878;
+  padding: 5px; }
+
+footer {
+  color: #ffd000;
+  background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+  padding: 5px; }
+  footer #copyright {
+    text-align: center; }
+    footer #copyright a {
+      outline: none;
+      color: #ffd000; }
+      footer #copyright a:hover {
+        text-shadow: 0 0 2px #fff; }
+
+/* 404 */
+.page404-page {
+  background: url("../images/bg_main_content.jpg") no-repeat center center/cover;
+  color: #ffd000;
+  font-size: 32px;
+  text-align: center; }
+
+/* Главная */
+.main-content {
+  background: url("../images/bg_main_content.jpg") no-repeat center center/cover;
+  color: #ffd000;
+  text-shadow: 1px 1px 1px #000; }
+  .main-content h1 {
+    text-align: center; }
+  .main-content p {
+    font-size: 16px; }
+
+/* Новости */
+.news-box .news-title {
+  background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+  text-align: center;
+  color: #ffd000;
+  text-shadow: -1px -1px 2px #000;
+  margin: 0;
+  padding: 10px; }
+  .news-box .news-title a {
+    color: #ffd000;
+    outline: none; }
+    .news-box .news-title a:hover {
+      text-shadow: 0 0 2px #fff; }
+.news-box .news-description {
+  padding: 15px; }
+.news-box .news-info {
+  padding: 10px;
+  color: #ffd000;
+  text-shadow: -1px -1px 2px #000;
+  background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%); }
+.news-box a {
+  text-shadow: 1px 1px 1px #000;
+  outline: none;
+  color: #ffd000; }
+
+.category-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .category-nav li a {
+    display: block;
+    padding: 5px;
+    outline: none;
+    background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%); }
+
+/* Услуги */
+/* Портфолио */
+.portfolio-content table, .portfolio-content tr, .portfolio-content td {
+  border: 1px double #000;
+  padding: 5px; }
+.portfolio-content table tr:first-of-type {
+  text-align: center;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+  color: #ffd000; }
+
+/* Контакты */
+#contact-box {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+/* Регистрация и авторизация */
+.users-form-box .navbar-form {
+  background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #000; }
+  .users-form-box .navbar-form h4 {
+    color: #ffd000;
+    text-align: center; }
+  .users-form-box .navbar-form label {
+    color: #ffd000;
+    font-size: 10px; }
+  .users-form-box .navbar-form input {
+    width: 100%; }
+  .users-form-box .navbar-form button {
+    outline: none;
+    min-width: 50%; }
+  .users-form-box .navbar-form a {
+    margin-top: 10px;
+    outline: none;
+    color: #ffd000; }
+    .users-form-box .navbar-form a:hover {
+      text-shadow: 0 0 2px #fff; }
+.users-form-box #login_info {
+  color: #ffd000; }
+
+/* Общие настройки для страниц */
+#content {
+  background-image: linear-gradient(to top, #000000 0%, #1c3253 75%, #529dff 100%);
+  color: #ffd000;
+  padding: 0; }
+
+.session-message {
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,103 @@
+# Main
+homepage:
+  path: /
+  defaults: { _controller WebDealerBundle:Main:index}
+
+error404:
+  path: /404
+  defaults: { _controller WebDealerBundle:Main:error404}
+
+# News
+news:
+  path: /news
+  defaults: { _controller WebDealerBundle:News:index}
+
+#aricle:
+#  path: /article
+#  defaults: { _controller WebDealerBundle:News:article}
+#
+#newsCategory:
+#  path: /news/category
+#  defaults: { _controler WebDealerBundle:News:category}
+#
+# About
+services:
+  path: /services
+  defaults: { _controller WebDealerBundle:Services:services}
+
+contacts:
+  path: /contacts
+  defaults: { _controller WebDealerBundle:Contact:contact}
+
+# Portfolio
+portfolio:
+  path: /portfolio
+  defaults: { _controller WebDealerBundle:Portfolio:portfolio}
+
+# Users - Register and Authorization
+register:
+  path: /register
+  defaults: { _controller WebDealerBundle:Users:register}
+
+login:
+  path: /login
+  defaults: { _controller WebDealerBundle:Users:login}
+
+logout:
+  path: /logout
+  defaults: { _controller WebDealerBundle:Users:logout}
+
+#Users - Profile
+profile:
+  path: /profile
+  defaults: { _controller WebDealerBundle:Users:profile}
+
+#submitArticle:
+#  path: /submitArticle
+#  defaults: { _controller WebDealerBundle:Users:submitArticle}
+
+# Admin
+adminMain:
+  path: /admin
+  defaults: { _controller WebDealerBundle:Admin:index}
+
+# Admin - News
+adminNews:
+  path: /admin/news
+  defaults: { _controller WebDealerBundle:Admin:news}
+
+# Admin - Article
+articleAdd:
+  path: /admin/article/add
+  defaults: { _controller WebDealerBundle:Admin:articleAdd}
+
+articleEdit:
+  path: admin/edit/article
+  defaults: { _controller WebDealerBundle:Admin:articleEdit}
+
+articleDelete:
+  path: admin/delete/article
+  defaults: { _controller WebDealerBundle:Admin:articleDelete}
+
+# Admin - Category
+category:
+  path: /admin/category
+  defaults: { _controller WebDealerBundle:Admin:category}
+
+categoryAdd:
+  path: /admin/category/add
+  defaults: { _controller WebDealerBundle:Admin:categoryAdd}
+
+# Admin
+#$router->add('adminMain', '/admin', 'Admin_Controller:index_action' , 'GET|POST');
+# Admin - News
+#$router->add('adminNews', '/admin/news', 'Admin_Controller:news_action' , 'GET|POST');
+# Admin - Article
+#$router->add('articleAdd', '/admin/article/add', 'Admin_Controller:article_add_action', 'GET|POST');
+#$router->add('articleEdit', '/admin/article/edit/(id:num)', 'Admin_Controller:article_edit_action' , 'GET|POST');
+#$router->add('articleDelete', '/admin/article/delete/(id:num)', 'Admin_Controller:article_delete_action' , 'GET|POST');
+# Admin - Category
+#$router->add('category', '/admin/category', 'Admin_Controller:category_action');
+#$router->add('categoryAdd', '/admin/category/add', 'Admin_Controller:category_add_action', 'GET|POST');
+#$router->add('categoryEdit', '/admin/category/edit/(id:num)', 'Admin_Controller:category_edit_action', 'GET|POST');
+#$router->add('categoryDelete', '/admin/category/delete/(id:num)', 'Admin_Controller:category_delete_action', 'GET|POST');

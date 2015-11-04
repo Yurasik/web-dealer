@@ -1,0 +1,36 @@
+WebDealerBundle\Entity\News:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        categoryId:
+            type: integer
+            column: category_id
+        authorId:
+            type: integer
+            column: author_id
+        title:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: '1000'
+        content:
+            type: string
+            length: '4000'
+        createAt:
+            type: datetime
+            column: create_at
+        updateAt:
+            type: datetime
+            column: update_at
+            nullable: null
+        status:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
